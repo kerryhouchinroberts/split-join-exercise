@@ -10,27 +10,27 @@ world_cup_news
 
 # enter your solutions inside the methods
 def goal(goal_message)
-
+  goal_message *2
 end
 
 def generate_an_array_of_teams(team_list)
-
+  team_list.split(', ')
 end
 
 def number_of_teams(team_list)
-
+  team_list.split(', ').count
 end
 
 def return_australia(team_list)
-
+  team_list.split(', ')[6]
 end
 
 def starts_with_C(team_list)
-
+  team_list.split(', ').select { |c| c.include?('C') }
 end
 
 def block_string_to_single_line(long_string)
-
+  long_string.split(',').join.sub(/\n/, ' ').sub(/\n/, ' ').sub(/\n/, ' ').strip
 end
 
 def capitalize_every_third_word(long_string)
